@@ -19,7 +19,7 @@ let productos = [
     },
     {
         nombre: "Goldewa",
-        img: "./assets/img/Goldewa.png",
+        img: "./assets/img/goldewa.png",
         id: 4,
         precio: 5000
     },
