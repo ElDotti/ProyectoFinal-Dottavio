@@ -103,14 +103,12 @@ function borrador (){
     carritoArr.forEach((i)=>{
         document.getElementById(`borrador${i.id}`).addEventListener(`click`, () =>{
             borrar(i)
-            console.log(i)
         })
     
     })
 }
 function borrar(i){
     if (i.cantidad == 1){
-        console.log("hola")
         let pos = carritoArr.indexOf(i)
         carritoArr.splice(pos,1)
         mostrarCarro()
@@ -142,7 +140,6 @@ function final(){
                     Swal.fire('Compra realizada!', '', 'success')
                         localStorage.clear()
                         carritoArr = []
-                        console.log(carritoArr)
                         mostrarCarro()
                 }
                   
@@ -173,7 +170,6 @@ function borrarFinal(){
                     Swal.fire('Eliminado!', '', 'success')
                         localStorage.clear()
                         carritoArr = []
-                        console.log(carritoArr)
                         mostrarCarro()
                 }
                   
