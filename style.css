@@ -1,0 +1,98 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.espacio{
+    height: 40px;
+    width: 20px;
+}
+nav > h1 {
+    text-align: center;
+    display: inline;
+    position: fixed;
+    background-color: rgb(111, 197, 144);
+    width: 300px
+
+   
+}
+.elementos {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.elementos > div{
+    border: solid;
+    margin: 5px;
+    text-align: center;
+}
+
+.elementos > div > button{
+    background-color: rgb(201, 231, 231);
+    width: 200px;
+    height: 35px;
+    margin: 5px;
+}
+nav > h1:hover + #carrito{
+    left: 0px;
+}
+#carrito:hover{
+    left: 0px;
+}
+#carrito{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(111, 197, 144);
+    width: 300px;
+    height: 100vh;
+    align-items: center;
+    left: -300px;
+    bottom: -27px;  
+    transition: 0.5s;  
+}
+
+.tarjeta{
+    border: solid;
+    margin: 5px;
+    width: 300px;
+    padding: 5px;
+    margin-top: 30px;
+}
+.tarjeta > h3{
+    padding: 5px
+}
+.tarjeta > h5{
+    padding: 5px
+}
+.tarjeta > p{
+    padding: 5px
+}
+#clientes{
+    display: flex;
+
+}
+
+.opiniones{
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 5px;
+}
+
+#carrito  button{
+    background-color: rgb(201, 231, 231);
+    width: 80px;
+    height: 35px;
+    margin: 5px;
+}
+#carrito > div{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    align-items: center;
+}
+
+.botonFinal{
+    width: 1000px;
+    background-color: blue;
+}
